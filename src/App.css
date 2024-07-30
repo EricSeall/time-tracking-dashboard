@@ -65,11 +65,16 @@
   border: none;
   text-decoration: none;
   
+  transition-duration: .1s;
 }
 
 .timeframe-button:active {
-  color: white;
+  color: lightblue;
 
+}
+
+.timeframe-button:hover {
+  scale: 1.1;
 }
 
 .activities {
@@ -132,6 +137,10 @@
 .last-time {
   color: var(--Pale-blue);
   font-size: .8rem;
+}
+
+.white {
+  color: white;
 }
 
 .light-orange {

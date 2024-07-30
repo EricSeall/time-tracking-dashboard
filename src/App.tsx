@@ -18,24 +18,51 @@ function App() {
             </div>
           </div>
           <div className="user-timeframes">
-            <button
-              className="timeframe-button"
-              onClick={() => setTimeframe("daily")}
-            >
-              Daily
-            </button>
-            <button
-              className="timeframe-button"
-              onClick={() => setTimeframe("weekly")}
-            >
-              Weekly
-            </button>
-            <button
-              className="timeframe-button"
-              onClick={() => setTimeframe("monthly")}
-            >
-              Monthly
-            </button>
+            {timeframe === "daily" ? (
+              <button
+                className="timeframe-button white"
+                onClick={() => setTimeframe("daily")}
+              >
+                Daily
+              </button>
+            ) : (
+              <button
+                className="timeframe-button"
+                onClick={() => setTimeframe("daily")}
+              >
+                Daily
+              </button>
+            )}
+            {timeframe === "weekly" ? (
+              <button
+                className="timeframe-button white"
+                onClick={() => setTimeframe("weekly")}
+              >
+                Weekly
+              </button>
+            ) : (
+              <button
+                className="timeframe-button"
+                onClick={() => setTimeframe("weekly")}
+              >
+                Weekly
+              </button>
+            )}
+            {timeframe === "monthly" ? (
+              <button
+                className="timeframe-button white"
+                onClick={() => setTimeframe("monthly")}
+              >
+                Monthly
+              </button>
+            ) : (
+              <button
+                className="timeframe-button"
+                onClick={() => setTimeframe("monthly")}
+              >
+                Monthly
+              </button>
+            )}
           </div>
         </section>
         <section className="activities">
